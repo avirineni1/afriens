@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="afriens">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href='stylesheets/bootstrap.min.css'/>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+  	<script src="javascripts/angular/angular.min.js"></script>
+  	<script src="javascripts/angular/angular-route.min.js"></script>
+  	<script src="/templates/main.html"></script>
+  	<script src="/javascripts/app.js"></script>
+    <title>Afriens</title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+   	<div ng-view></div>
   </body>
 </html>
